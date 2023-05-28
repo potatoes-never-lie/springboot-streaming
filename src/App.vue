@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <video-player />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VideoPlayer from "./VideoPlayer.vue";
+import "video.js/dist/video-js.css";
 
 export default {
-  name: 'App',
+  name: "VideoExample",
   components: {
-    HelloWorld
-  }
-}
+    VideoPlayer,
+  },
+  data() {
+    return {};
+  },
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
